@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+body{
+    height: 100vh;
+    background-color: #f3f9fe;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    /* height: 500px; */
+    height: fit-content;
+    width: 300px;
+    background-color: white;
+    /* border: 2px solid black; */
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    row-gap: 30px;
+    /* align-items: center; */
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px 20px #dee9fad0;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+h1{
+    font-size: 35px;
+    color: #100e2a;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    position: relative;
+}
+.fname,.lname,.email,.password{
+    position: absolute;
+    top: 11px;
+    color: gray;
+    transition: all 0.3s ease-out;
+}
+.fname{
+    left: 14px;
+}
+.lname{
+    right: 60px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+input{
+    /* width: 100%; */
+    padding: 13px 15px;
+    border: 2px solid rgb(192, 186, 186);
+    border-radius: 5px;
+}
+.name input{
+    width: 100%;
+}
+.submit1,.submit2{
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 17px;
+    font-weight: bolder;
+    font-size: 16px;
+    transition: all 0.5s ease-out;
+}
+.submit1{
+    background-color: #4868ad;
+}
+.submit2{
+    background-color: #202b4b;
+}
+.submit1:hover,.submit2:hover{
+    opacity: 0.8;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    position: relative;
+}
+.email,.password{
+    position: absolute;
+    left:15px;
+}
+.email{
+    top: 11px;
+}
+.password{
+    top: 82px;
+}
+
+@media screen and (max-width:767px) {
+    .card{
+        padding: 25px;
+    }
+    .container{
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+    body{
+        overflow-y: scroll;
+    }
+}
